@@ -1,0 +1,251 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay"],
+     "responses": ["Hello! How can I help you today?", "Hi there! What can I do for you?",  "Hey! What do you need help with?"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help","ok thanks"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?" ],
+     "responses": ["I'm RaBot, your bot assistant", "I'm RaBot, an Artificial Intelligent bot"]
+    },
+    {"tag": "name",
+    "patterns": ["what is your name", "what should I call you", "whats your name?"],
+    "responses": ["You can call me RaBot.", "I'm RaBot!", "Just call me as RaBot"]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+    "responses": ["Tell me how can I assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
+    },
+    {"tag": "createaccount",
+    "patterns": ["I need to create a new account", "how to open a new account", "I want to create an account", "can you create an account for me", "how to open a new account"],
+    "responses": ["You can just easily create a new account from our web site", "Just go to our web site and follow the guidelines to create a new account"]
+    },
+    {"tag": "complaint",
+    "patterns": ["i have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+    "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"]
+    },
+    {"tag": "situation",
+    "patterns": ["how are you", "how was your day", "talk me about your day","what's up"],
+    "responses": ["I'am fine,what about you?", "I am doing well,do you?","I am feeling good,wbu?","I am good,wbu?"]
+    },
+    {"tag": "noanswer",
+     "patterns": [""],
+     "responses": ["Sorry, can't understand you","Please give me more info","Not sure I understand"]
+    },
+    {
+     "tag": "exclaim",
+     "patterns": [ "Awesome","Great","I know", "ok", "yeah"],
+     "responses": ["Yeah!"]  
+    },
+    {
+     "tag": "password",
+     "patterns": [ "I can't remember my password","I forget my password","i can't access my account with my password", "i can't log in", "my password is invalid"],
+     "responses": ["okay you need to reset your password,follow my steps click on forget password below the page then enter your email and we will send a activition code so you can reset your password"]  
+    },
+    {
+     "tag": "service",
+     "patterns": [ "my account service is no working","Page Service is not responding","There is a bug in the system"],
+     "responses": ["okay you need to make a report to our technical team","i guess you should contact with our technical team"]  
+    },
+    {
+     "tag": "email",
+     "patterns": [ "i can't remember my email","i can't get my email","my email is invalid", "i forget my email", "i can't access my accound with my email"],
+     "responses": ["click on forget email or password below the page and press on can't remember my email we will ask you to enter your phone number so we can send you an activition code to recover your account"]  
+    },
+    {
+     "tag": "billing",
+     "patterns": [ "my payment didn't go through","My payment was not accepted","My payment was unsuccessful"],
+     "responses": ["i will see it in my pending payment","I'll check my pending payment","I'll check my balance due"]  
+    }, 
+    {
+     "tag": "delivery",
+     "patterns": [ "my package didn't arrive","My package never come","My shipment never came"],
+     "responses": ["i will check my job scheduling","I'll double-check my work schedule"]  
+    }, 
+    {
+        "tag": "order_status",
+        "patterns": [
+            "Where is my order?",
+            "What is the status of my order?",
+            "When will my order arrive?"
+        ],
+        "responses": [
+            "Please provide your order number and we will check the status for you.",
+            "We apologize for any delay. Please provide your order number and we will look into it.",
+            "Our records show that your order is currently in transit. Please provide your order number if you need more information."
+        ]
+    },
+    {
+        "tag": "cancel_order",
+        "patterns": [
+            "Can I cancel my order?",
+            "I want to cancel my order",
+            "How do I cancel my order?"
+        ],
+        "responses": [
+            "Sure, we can cancel your order. Please provide your order number and we will process the cancellation for you.",
+            "We apologize for any inconvenience. Please provide your order number and we will cancel your order for you.",
+            "Of course, we can cancel your order. Please provide your order number and we will take care of it."
+        ]
+    },
+    {
+        "tag": "return_policy",
+        "patterns": [
+            "What is your return policy?",
+            "How do I return an item?",
+            "Can I get a refund?"
+        ],
+        "responses": [
+            "Our return policy allows for returns within 30 days of purchase. Please visit our website for more information.",
+            "To return an item, please visit our website and follow the instructions on our returns page.",
+            "If you are not satisfied with your purchase, we offer refunds within 30 days of purchase. Please visit our website for more information."
+        ]
+    },
+    {
+        "tag": "payment_methods",
+        "patterns": [
+            "What payment methods do you accept?",
+            "Can I pay with PayPal?",
+            "Do you accept credit cards?"
+        ],
+        "responses": [
+            "We accept all major credit cards, as well as PayPal and Apple Pay.",
+            "Yes, we accept PayPal as a payment method.",
+            "We accept all major credit cards, including Visa, Mastercard, and American Express."
+        ]
+    },
+    {
+        "tag": "shipping_options",
+        "patterns": [
+            "What are my shipping options?",
+            "How much does shipping cost?",
+            "When will my order arrive?"
+        ],
+        "responses": [
+            "We offer a variety of shipping options, including standard, expedited, and overnight shipping. Shipping costs vary depending on the shipping method and the destination.",
+            "Shipping costs vary depending on the shipping method and the destination. Please visit our website for more information.",
+            "Our standard shipping typically takes 3-5 business days to arrive, but shipping times may vary depending on the shipping method and the destination."
+        ]
+    },
+    {
+        "tag": "product_info",
+        "patterns": [
+            "Can you tell me more about this product?",
+            "What are the specifications of this product?",
+            "What materials is this product made of?"
+        ],
+        "responses": [
+            "Certainly! Our products are made of high-quality materials and are designed to last. Please visit our website for more information on this product.",
+            "This product is made of durable materials and is designed to meet our high standards of quality. Please visit our website for more information.",
+            "We use only the finest materials in our products, and this product is no exception. Please visit our website for more information on this product."
+        ]
+    },
+    {
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Joke",
+                "Make me laugh"
+            ],
+            "responses": [
+                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+                "I ate a clock yesterday, it was very time-consuming",
+                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+                "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                "What do you call a snowman with a suntan? A puddle.",
+                "How does a penguin build a house? Igloos it together",
+                "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+                "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+                "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+            ]
+            
+        }, 
+         {
+            "tag": "haha",
+            "patterns": [
+                "haha",
+                "lol",
+                "rofl",
+                "lmao",
+                "thats funny"
+            ],
+            "responses": [
+                "Glad I could make you laugh !"
+            ]
+        },
+         {
+            "tag": "programmer",
+            "patterns": [
+                "Who made you",
+                "who designed you",
+                "who programmed you"
+            ],
+            "responses": [
+                "I was made by RAJAVARSHINI C."
+            ]
+        },
+           {
+            "tag": "insult",
+            "patterns": [
+                
+                "you are dumb",
+                
+                "shut up",
+                "idiot"
+            ],
+            "responses": [
+                "Well that hurts :("
+            ]
+        },
+           {
+            "tag": "nicetty",
+            "patterns": [
+                "it was nice talking to you",
+                "good talk"
+            ],
+            "responses": [
+                "It was nice talking to you as well! Come back soon!"
+            ]
+        },
+           {
+            "tag": "no",
+            "patterns": [
+                "no",
+                "nope"
+            ],
+            "responses": [
+                "ok"
+            ]
+        },
+         {
+            "tag": "age",
+            "patterns": [
+                "how old are you","when were you made","what is your age"
+            ],
+            "responses": [
+                "I was made in April 2024, if that's what you are asking!"
+            ]
+        },
+         {
+            "tag": "greetreply",
+            "patterns": [
+                "i am good",
+                "I'm good",
+                "i am fine",
+                " i'm fine","good"
+            ],
+            "responses": [
+                "Good to know!"
+            ]
+        }
+]
+}
